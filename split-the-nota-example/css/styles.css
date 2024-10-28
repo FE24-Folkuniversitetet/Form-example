@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+label, h2, button {
+    font-family: 'Oswald';
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #443385;
+    border-radius: 4px;
+    padding: 2rem;
+    box-shadow: -8px 8px #e1e1fc;
+}
+
+.form__label {
+    font-size: 0.9rem;
+    color: #5c29db;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem 0.5rem 0;
+    font-size: 1rem;
+    min-width: 200px;
+}
+
+/** När inputfältet får fokus **/
+.form__input:focus {
+    border-color: #5c29db;
+}
+
+.form__button {
+    padding: 1rem;
+    background-color: #443385;
+    color: #ffffff;
+    border: 1px solid #443385;
+    outline: none;
+    font-size: 1.2rem;
+    box-shadow: -4px 4px #e1e1fc;
+}
